@@ -26,6 +26,7 @@
 	
 
 input_1 = input("Enter option for user1: ")
+input_1 = input_1.lower()
 # check for valid input from user1
 if input_1 != "scissors" and input_1 != "rock" and input_1 != "paper":
 	# If input is invalid,ask user input until the input is valid
@@ -35,6 +36,8 @@ if input_1 != "scissors" and input_1 != "rock" and input_1 != "paper":
 		if input_1 == "scissors" or input_1 == "rock" or input_1 == "paper":
 			break
 input_2 = input("Enter option for user2: ")
+input_2 = input_2.lower()
+
 # check for valid input from user2
 if input_1 != "scissors" and input_1 != "rock" and input_1 != "paper":
 	# If input is invalid,ask user input until the input is valid
