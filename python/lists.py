@@ -68,6 +68,50 @@ friends_join = friends[:]
 string = ' | '.join(friends_join)
 print(string)
 
+##### SLICING lists
+
+friends_slice_start = friends[1:]
+print(friends_slice_start)
+
+
+friends_slice_end = friends[:3]
+print(friends_slice_end)
+
+friends_slice_negative = friends[-1:]
+print(friends_slice_negative)
+
+
+friends_slice_step = friends[1::2]
+print(friends_slice_step)
+
+
+#### Reversing lists using slice
+
+friends_reverse_slice = friends[::-1]
+print(friends_reverse_slice)
+
+
+#### replacing a portion of lists using slice
+
+friends_replace_slice = friends[:]
+
+friends_replace_slice[6:8] = ['daya','sandeep','dinesh','aravin']
+print(friends_replace_slice)
+
+##### reversing a list elemnt
+
+friends_reverse_slice = friends[2][::-1]
+print(friends_reverse_slice)
+
+##### swapping values in lists
+
+friends_swap = friends[:]
+print(friends_swap)
+friends_swap[0] , friends_swap[1] = friends_swap[1] , friends_swap[0]
+print(friends_swap)
+
+
+
 
 
 
