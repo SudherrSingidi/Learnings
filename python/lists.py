@@ -24,7 +24,7 @@ print(friends_remove)
 # Remove list elements using pop.pop() metod removes a list element at a specified index
 
 friends_pop = friends[:]  # list slicing : list[start:stop:step]
-friends_pop.pop(-1) # removes last element of the list .other synstxes friends_pop.pop(len(friends_pop)) or  friends_pop.pop()
+friends_pop.pop(-1) # removes last element of the list .other syntaxes friends_pop.pop(len(friends_pop)) or  friends_pop.pop()
 print(friends_pop)
 
 
