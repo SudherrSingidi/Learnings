@@ -38,12 +38,12 @@ if number_of_games >= 0:
 choice = input(f"Would you like to continue (y/n) ").upper()
 user_1 = 0
 user_2 = 0
-if choice != 'Y' or choice != 'N':
-	while choice != 'Y' or choice != 'N':
-		print("I did not understand that.Please enter a valid option")
-		choice = input(f"Would you like to continue (y/n) ").upper()
-		if choice == 'Y' or choice == 'N':
-			break
+
+while choice != 'Y' or choice != 'N':
+	print("I did not understand that.Please enter a valid option")
+	choice = input(f"Would you like to continue (y/n) ").upper()
+	if choice == 'Y' or choice == 'N':
+		break
 while choice == 'Y':
 	print("Game starts now. Good luck!!!")
 	for r in range(number_of_games):
