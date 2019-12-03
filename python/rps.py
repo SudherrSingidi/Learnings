@@ -23,6 +23,7 @@
 # 		print("User 1 wins!")
 # 	else:
 # 		print("user 2 wins")
+
 import getpass
 print("Welcome to:\n....Rock....\n.....Paper.....\n......Scissors......\nYou are about to play")
 while True:
@@ -35,7 +36,7 @@ while True:
 		break
 if number_of_games >= 0:
 	print(f"You chose to play RPS {number_of_games} times")
-choice = input(f"Would you like to continue (y/n) ").upper()
+choice = ' '
 user_1 = 0
 user_2 = 0
 
@@ -84,7 +85,12 @@ while choice == 'Y':
 		print(f"User 1 won {user_1} times.So, User 1 wins")
 	elif user_1 == user_2:
 		print("It's a tie")
-	choice = input("Would you like to play another game? (y/n) ").upper()
+		choice = ' '
+		while choice != 'Y' or choice != 'N':
+			print("I did not understand that.Please enter a valid option")
+			choice = input("Would you like to play another game? (y/n) ").upper()
+			if choice == 'Y' or choice == 'N':
+				break
 	if choice == 'Y':
 		while True:
 			try:
