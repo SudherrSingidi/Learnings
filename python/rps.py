@@ -41,10 +41,11 @@ user_1 = 0
 user_2 = 0
 
 while choice != 'Y' or choice != 'N':
-	print("I did not understand that.Please enter a valid option")
 	choice = input(f"Would you like to continue (y/n) ").upper()
 	if choice == 'Y' or choice == 'N':
 		break
+	if choice != 'Y' or choice != 'N':
+		print("I did not understand that.Please enter a valid option")
 while choice == 'Y':
 	print("Game starts now. Good luck!!!")
 	for r in range(number_of_games):
@@ -87,10 +88,11 @@ while choice == 'Y':
 		print("It's a tie")
 		choice = ' '
 		while choice != 'Y' or choice != 'N':
-			print("I did not understand that.Please enter a valid option")
 			choice = input("Would you like to play another game? (y/n) ").upper()
 			if choice == 'Y' or choice == 'N':
 				break
+			if choice != 'Y' or choice != 'N':
+				print(f"I did not understand that.Please enter a valid option {choice}")
 	if choice == 'Y':
 		while True:
 			try:
