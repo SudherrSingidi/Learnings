@@ -92,7 +92,7 @@ while choice == 'Y':
 			if choice == 'Y' or choice == 'N':
 				break
 			if choice != 'Y' or choice != 'N':
-				print(f"I did not understand that.Please enter a valid option {choice}")
+				print("I did not understand that.Please enter a valid option")
 	if choice == 'Y':
 		while True:
 			try:
