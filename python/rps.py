@@ -29,16 +29,17 @@ print("Welcome to:\n....Rock....\n.....Paper.....\n......Scissors......\nYou are
 while True:
 	try:
 		number_of_games = int(input("How many times you would like to play RPS in this game: "))
+		if number_of_games <= 0:
+			raise ValueError
 	except ValueError:
-		print("I did not understand that.Please enter a valid number")
+		print("I did not understand that.Please enter a valid number which is greater than 0")
 		continue
 	else:
 		break
-if number_of_games >= 0:
-	print(f"You chose to play RPS {number_of_games} times")
 choice = ' '
 user_1 = 0
 user_2 = 0
+
 
 while choice != 'Y' or choice != 'N':
 	choice = input(f"Would you like to continue (y/n) ").upper()
