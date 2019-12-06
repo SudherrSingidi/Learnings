@@ -42,7 +42,7 @@ user_2 = 0
 
 
 while choice != 'Y' or choice != 'N':
-	choice = input(f"Would you like to continue (y/n) ").upper()
+	choice = input(f"You chose to play RPS {number_of_games} times.Would you like to continue (y/n) ").upper()
 	if choice == 'Y' or choice == 'N':
 		break
 	if choice != 'Y' or choice != 'N':
@@ -87,13 +87,13 @@ while choice == 'Y':
 		print(f"User 1 won {user_1} times.So, User 1 wins")
 	elif user_1 == user_2:
 		print("It's a tie")
-		choice = ' '
-		while choice != 'Y' or choice != 'N':
-			choice = input("Would you like to play another game? (y/n) ").upper()
-			if choice == 'Y' or choice == 'N':
-				break
-			if choice != 'Y' or choice != 'N':
-				print("I did not understand that.Please enter a valid option")
+	choice = ' '
+	while choice != 'Y' or choice != 'N':
+		choice = input("Would you like to play another game? (y/n) ").upper()
+		if choice == 'Y' or choice == 'N':
+			break
+		if choice != 'Y' or choice != 'N':
+			print("I did not understand that.Please enter a valid option")
 	if choice == 'Y':
 		while True:
 			try:
